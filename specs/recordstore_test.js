@@ -8,7 +8,7 @@ describe("Recordstore", function() {
   var record1;
 
   beforeEach(function() {
-    recordstore = new Recordstore("Layla's Records", "Glasgow");
+    recordstore = new Recordstore("Layla's Records", "Glasgow", 1000);
     record1 = new Record("Kip Moore", "Up All Night", 5.99);
   });
 
@@ -18,6 +18,10 @@ describe("Recordstore", function() {
 
   it("should have a city", function() {
     assert.equal("Glasgow", recordstore.city);
+  });
+
+  it("should have a balance", function() {
+    assert.equal(1000, recordstore.balance);
   });
 
   it("should have an empty inventory to begin with", function() {
