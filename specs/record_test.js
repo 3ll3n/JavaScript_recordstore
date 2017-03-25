@@ -4,7 +4,6 @@ var assert = require("assert");
 describe('Record', function() {
 
   var record1;
-  var title;
 
   beforeEach(function() {
     record1 = new Record("Kip Moore", "Up All Night");
