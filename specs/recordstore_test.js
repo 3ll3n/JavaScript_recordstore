@@ -30,6 +30,7 @@ describe("Recordstore", function() {
 
   it("should have a balance of 1 when record added to inventory", function() {
     recordstore.add(record1);
+    assert.equal(1, recordstore.inventory.length);
   });
 
 });

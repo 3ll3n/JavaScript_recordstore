@@ -21,4 +21,8 @@ describe('Record', function() {
     assert.equal(5.99, record1.price);
   });
 
+  // it("should print out record details as a string", function() {
+  //   assert.equal();
+  // });
+
 }); 
