@@ -22,7 +22,7 @@ describe('Record', function() {
   });
 
   it("should print out record details as a string", function() {
-    assert.equal("Kip Moore, Up All Night, 5.99", record1.recordString);
+    assert.equal("Artist: Kip Moore, Title: Up All Night, Price: 5.99", record1.toString());
   });
 
 }); 

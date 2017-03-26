@@ -4,9 +4,12 @@ var Record = function(artist, title, price) {
   this.price = price;
 }
 
-var recordString = function(record) {
-  return JSON.stringify(record);
+Record.prototype = {
+  toString: function() {
+    return("Artist: " + this.artist + ", Title: " + this.title + ", Price: " + this.price);
+  }
 }
-// console.log(recordString);
+
+console.log(toString);
 
 module.exports = Record;
