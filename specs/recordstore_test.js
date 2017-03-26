@@ -25,12 +25,12 @@ describe("Recordstore", function() {
   });
 
   it("should have an empty inventory to begin with", function() {
-    assert.equal(0, recordstore.inventory);
+    assert.equal(0, recordstore.inventory.length);
   });
 
-  it("should have a balance of 1 when record added to inventory", function() {
+  it("should be able to add to the inventory", function() {
     recordstore.add(record1);
-    assert.equal(1, recordstore.inventory.length);
+    assert.equal(1, recordstore.getInventoryCount());
   });
 
 });

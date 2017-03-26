@@ -3,12 +3,16 @@ var Recordstore = function(name, city, balance) {
   this.city = city;
   this.balance = balance;
   this.inventory = [];
+  // this.getInventoryCount = 
 };
 
 Recordstore.prototype = {
   add: function(record) {
-  return this.inventory.push(record);
-  } 
+   this.inventory.push(record);
+  }, 
+  getInventoryCount: function() {
+    return this.inventory.length;
+  }
 };
 
 module.exports = Recordstore;
