@@ -10,6 +10,4 @@ Record.prototype = {
   }
 }
 
-console.log(toString);
-
 module.exports = Record;
